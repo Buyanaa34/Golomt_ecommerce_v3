@@ -1,0 +1,88 @@
+.Sidebar {
+  margin: 0;
+  background-color: #323f52;
+  height: 100%;
+  float: left;
+  width: 20%;
+}
+
+.SidebarList {
+  justify-content: left;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.SidebarList .row {
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 15px;
+  font: bold;
+  color: white;
+  justify-content: left;
+  flex-direction: row;
+  display: flex;
+}
+
+.SidebarList .row #icon {
+  display: grid;
+  place-items: center;
+  flex: 30%;
+}
+
+.SidebarList .row #name {
+  flex: 70%;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #485972;
+}
+
+.SidebarList .active {
+  text-decoration: none;
+  transition: 0.5s;
+  padding-top: 15px;
+  font: bold;
+  color: #313d50;
+  justify-content: left;
+  flex-direction: row;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .SidebarList .row #name {
+    display: none;
+  }
+}
+
+.zurag {
+  margin-top: 70%;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  filter: blur(1.75px);
+}
+
+.zurag:hover {
+  cursor: pointer;
+  filter: blur(0);
+}
+
+@media (max-width: 600px) {
+  .zurag {
+    display: none;
+  }
+}
+
+@media (max-height: 600px) {
+  .zurag {
+    display: none;
+  }
+}
+
+.myinfo {
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #838181;
+}

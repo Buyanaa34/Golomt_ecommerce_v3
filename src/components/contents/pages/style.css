@@ -1,0 +1,90 @@
+.nvvr_pic {
+  border-radius: 5px;
+  box-shadow: 5px 5px #b8b8b8;
+  width: 60%;
+  background-color: #b8b8b883;
+  margin: auto;
+}
+.welcoming {
+  margin-bottom: 50px;
+  animation-name: title_anime;
+  animation-duration: 1.7s;
+}
+
+@keyframes title_anime {
+  from {
+    margin-left: 100px;
+    color: #2a3546;
+  }
+  to {
+    margin-left: 0;
+    color: rgb(139, 160, 162);
+  }
+}
+
+.pages {
+  display: flex;
+}
+
+.pagez {
+  animation-name: pages_animation;
+  animation-duration: 1.3s;
+}
+
+.pagez1 {
+  animation-name: pages_animation;
+  animation-duration: 0.5s;
+}
+
+@keyframes pages_animation {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.show_results {
+  word-wrap: break-word;
+  font-weight: bold;
+  color: rgb(139, 160, 162);
+  margin-left: 10px;
+  text-align: left;
+}
+
+.show_results_mid {
+  padding: 10px;
+  word-wrap: break-word;
+  font-weight: bold;
+  color: rgb(139, 160, 162);
+  font-size: 20px;
+  text-align: center;
+}
+.description_holder {
+  color: rgb(94, 94, 94);
+}
+
+.body_of_response {
+  margin-left: 21%;
+  text-align: left;
+  font-weight: bold;
+  color: rgb(139, 160, 162);
+  font-size: 16px;
+}
+
+.body_of_response span {
+  color: rgb(255, 100, 95);
+}
+
+.title_response {
+  color: rgb(255, 100, 95);
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.dropdown_holder {
+  padding: 5px;
+}

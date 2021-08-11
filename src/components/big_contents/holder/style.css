@@ -1,0 +1,46 @@
+.holder {
+  width: 50%;
+  height: 95%;
+  text-align: center;
+  background-color: rgb(221, 221, 221);
+  float: left;
+  box-shadow: 5px 5px #c7c7c7;
+  margin: 10px;
+  animation-name: holder_anime;
+  animation-duration: 1.5s;
+  margin-left: 12%;
+  transition: transform 0.12s ease-out;
+}
+
+@keyframes holder_anime {
+  from {
+    margin-left: 250px;
+  }
+  to {
+    margin-left: 12%;
+  }
+}
+
+h1 {
+  color: rgb(139, 160, 162);
+  text-align: center;
+}
+
+.holder:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px #b8b8b8;
+}
+
+.form_holder {
+  margin-top: 50px !important;
+  justify-items: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 500px) {
+  .form_holder {
+    grid-template-columns: none;
+  }
+}

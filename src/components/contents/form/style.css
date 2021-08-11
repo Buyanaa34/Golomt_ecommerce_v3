@@ -1,0 +1,21 @@
+.orolt {
+  color: #323f52;
+  background-color: rgb(255, 255, 255);
+  border-style: none;
+  margin: 10px;
+  border-radius: 7px;
+  font-size: 18px;
+  width: 75%;
+}
+.orolt:focus {
+  outline: none;
+}
+.orolt::placeholder {
+  color: rgb(174, 174, 174);
+}
+
+@media (max-width: 500px) {
+  .orolt::placeholder {
+    font-size: 12px;
+  }
+}
